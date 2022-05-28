@@ -1,0 +1,132 @@
+body {
+  background-color: #121417;
+  font-family: 'Overpass', sans-serif;
+}
+
+.main-section-wrapper {
+  background-color: #252d37;
+  width: 28%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 30px;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-section-wrapper h2 {
+  margin-top: 30px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.main-section-wrapper p {
+  color: #959eac;
+  margin-bottom: 30px;
+}
+
+.icon-star, .rating-btn button {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: rgba(124, 135, 152, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rating-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rating-btn button {
+  border: none;
+  color: #959eac;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 100;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.rating-btn button:hover {
+  background-color: #959eac;
+  color: white;
+}
+
+.submit-btn button {
+  height: 45px;
+  width: 100%;
+  background-color: #fb7413;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.submit-btn button:hover {
+  color: #fb7413;
+  background-color: white;
+}
+
+.back-section {
+  text-align: center;
+}
+
+.back-section h2 {
+  margin-top: 40px;
+}
+
+.back-section p {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.front-section {
+  display: block;
+}
+
+.back-section {
+  display: none;
+}
+
+.rating-stars {
+  background-color: rgba(124, 135, 152, 0.2);
+  color: #fb7413;
+  width: 70%;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  border-radius: 30px;
+  padding: 10px 0;
+  margin: 30px auto;
+}
+
+@media (max-width: 375px) {
+  .main-section-wrapper {
+    width: 90%;
+  }
+  .rating-stars {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,132 @@
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lighg_rey: hsl(217, 12%, 63%);
+$medium_grey: hsl(216, 12%, 54%);
+$dark_blue: hsl(213, 19%, 18%);
+$verydark_blue: hsl(216, 12%, 8%);
+
+body {
+    background-color: $verydark_blue;
+    font-family: 'Overpass', sans-serif;
+}
+
+.main-section-wrapper {
+    background-color: $dark_blue;
+    width: 28%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+
+    h2 {
+        margin-top: 30px;
+        color: $white;
+        letter-spacing: 1px;
+    }
+
+    p {
+        color: $lighg_rey;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+
+.icon-star {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: hsla(216, 12%, 54%, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-btn {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        @extend .icon-star;
+        border: none;
+        color: $lighg_rey;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 100;
+        transition: 0.4s;
+
+        &:hover {
+            background-color: $lighg_rey;
+            color: white;
+        }
+    }
+}
+
+.submit-btn {
+    button {
+        height: 45px;
+        width: 100%;
+        background-color: $orange;
+        border: none;
+        border-radius: 30px;
+        letter-spacing: 2px;
+        margin-top: 30px;
+        color: white;
+        transition: .4s;
+
+        &:hover {
+            color: $orange;
+            background-color: white;
+        }
+
+    }
+}
+
+.back-section {
+    text-align: center;
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    p {
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+}
+
+.front-section {
+    display: block;
+}
+
+.back-section {
+    display: none;
+}
+
+.rating-stars {
+    background-color: hsla(216, 12%, 54%, 0.2);
+    color: $orange;
+    width: 70%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    border-radius: 30px;
+    padding: 10px 0;
+    margin: 30px auto;
+}
+
+@media (max-width:375px) {
+    .main-section-wrapper {
+        width: 90%;
+    }
+
+    .rating-stars {
+        width: 80%;
+    }
+}
