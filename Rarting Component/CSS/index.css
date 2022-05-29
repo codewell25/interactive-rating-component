@@ -61,12 +61,15 @@ body {
   height: 50px;
   font-size: 18px;
   font-weight: 100;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 .rating-btn button:hover {
   background-color: #959eac;
+  color: white;
+}
+
+.btn:focus {
+  background-color: #fb7413;
   color: white;
 }
 

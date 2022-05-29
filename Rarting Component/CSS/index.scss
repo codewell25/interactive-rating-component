@@ -59,13 +59,18 @@ body {
         height: 50px;
         font-size: 18px;
         font-weight: 100;
-        transition: 0.4s;
+      
 
         &:hover {
             background-color: $lighg_rey;
             color: white;
         }
     }
+}
+
+.btn:focus {
+    background-color: $orange;
+    color: white;
 }
 
 .submit-btn {
